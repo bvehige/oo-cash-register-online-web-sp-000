@@ -23,9 +23,9 @@ def add_item(title, price, quantity = 1)
 
 def apply_discount
   if @discount > 0 
-    @savings = (price*discount)/100.to_f
+    @savings = (price*discount)/100
     @total -= @savings
-    return "After the discount, the total comes to $#{@total.to_i}."
+    return "After the discount, the total comes to $#{@total}."
   else
     return "There is no discount to apply."
   end
