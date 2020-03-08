@@ -29,5 +29,10 @@ def apply_discount
   end
 end
 
+def item
+@item_list    
+end
+
+
 end
 
