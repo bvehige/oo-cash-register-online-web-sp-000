@@ -32,7 +32,7 @@ end
 
 def apply_discount
   if @discount > 0 
-    @savings = (@price*@discount)/100
+    @savings = (@price*@discount)/100.to_f
     @total -= @savings
     return "After the discount, the total comes to $#{@total}."
   else
