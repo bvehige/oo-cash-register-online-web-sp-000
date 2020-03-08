@@ -2,7 +2,7 @@ require 'pry'
 
 class CashRegister
 
-attr_accessor :total, :discount, :title, :price
+attr_accessor :total, :discount, :title, :price; :last_transaction
 
 
 def initialize(discount = 0)
@@ -25,7 +25,7 @@ def add_item(title, price, quantity = 1)
      else
        @item_list << title
  end
- 
+ @last_transaction = @total 
 end
 
 def apply_discount
@@ -43,7 +43,7 @@ def items
 end
 
 def void_last_transaction 
-  @total -= @price 
+  @total -= 
 
 end
 
