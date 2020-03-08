@@ -29,7 +29,7 @@ def apply_discount
   end
 end
 
-def item
+def items
 @item_list    
 end
 
