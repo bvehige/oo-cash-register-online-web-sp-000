@@ -15,7 +15,7 @@ end
 
 def add_item(title, price, quantity = 1)
   @price = price 
-  @total += (price*quantity) 
+   
     if quantity > 0 
       counter = 0 
       while counter < quantity 
@@ -25,7 +25,9 @@ def add_item(title, price, quantity = 1)
      else
        @item_list << title
  end
+ @total += (price*quantity)
  @last_transaction = @total 
+ @total
 end
 
 def apply_discount
