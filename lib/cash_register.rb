@@ -21,7 +21,6 @@ end
 
 def apply_discount
   if @discount > 0 
-    binding.pry
     @savings = (@price*@discount)
     @total -= @savings
     puts "After the discount, the total is $#{@total}."
