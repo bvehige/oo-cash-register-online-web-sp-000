@@ -20,6 +20,7 @@ end
 
 def apply_discount
   if @discount > 0 
+    puts "After the discount "
     @total = self*.80
     
   
