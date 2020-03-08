@@ -21,9 +21,9 @@ def add_item(title, price, quantity = 1)
       while counter < quantity 
        @item_list << title
        counter += 1 
+     end
      else
-       @item_list << title 
-   end
+       @item_list << title
  end
 end
 
