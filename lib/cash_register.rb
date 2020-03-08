@@ -19,6 +19,9 @@ def add_item(title, price, quantity = 1)
 end
 
 def apply_discount
+  if @discount > 0 
+    @total = self*.80
+    
   
 end
 
