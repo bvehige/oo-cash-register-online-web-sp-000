@@ -14,20 +14,12 @@ def initialize(discount = 0)
 end
 
 def add_item(title, price, quantity = 1)
-  @price = price 
-   
-    if quantity > 0 
-      counter = 0 
-      while counter < quantity 
-       @item_list << title
-       counter += 1 
-     end
-     else
-       @item_list << title
- end
- @total += (price*quantity)
- @last_transaction = @total 
- @total
+  self.total += amount * quantity
+  quantity.times do
+   items << title
+    end
+    self.last_transaction = amount * quantity
+  end
 end
 
 def apply_discount
