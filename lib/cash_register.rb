@@ -9,12 +9,14 @@ def initialize(discount = 0)
   @total = 0
   @discount = discount
   @title = title 
+  @item_list = []
   
 end
 
-def add_item(title, price)
-  @total += price 
-  
+def add_item(title, price, quantity = l)
+  @total = (price*quantity) 
+  @item_list << title
+end
 
 
 end
