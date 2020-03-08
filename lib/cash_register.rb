@@ -42,7 +42,10 @@ def items
 end
 
 def void_last_transaction 
-  binding.pry
+  @total -= @price 
+  if @item_list.empty? 
+    @total = 0
+  end
 end
 
 
