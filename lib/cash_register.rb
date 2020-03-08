@@ -21,7 +21,8 @@ end
 
 def apply_discount
   if @discount > 0 
-    savings = *80
+    savings = @price*80
+    @total -= savings
     puts "After the discount, the total is $#{@total}."
   else
     puts "There is no discount to apply."
