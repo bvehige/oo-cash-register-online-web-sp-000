@@ -44,7 +44,7 @@ end
 def void_last_transaction 
   @total -= @price 
   if @item_list.empty? 
-    @total = 0
+    @total = 0.0
   end
 end
 
