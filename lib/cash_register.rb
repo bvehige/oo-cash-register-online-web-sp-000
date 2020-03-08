@@ -20,7 +20,6 @@ def add_item(title, price, quantity = 1)
     end
     self.last_transaction = amount * quantity
   end
-end
 
 def apply_discount
   if @discount > 0 
