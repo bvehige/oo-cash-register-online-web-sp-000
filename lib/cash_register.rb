@@ -23,9 +23,9 @@ def apply_discount
     @total = self*80
     puts "After the discount, the total is $#{@total}."
   else
-    
+    puts "There is no discount to apply."
   end
-
+end
 
 end
 
