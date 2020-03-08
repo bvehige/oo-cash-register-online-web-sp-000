@@ -2,13 +2,14 @@ require 'pry'
 
 class CashRegister
 
-attr_accessor :total, :discount, :title
+attr_accessor :total, :discount, :title, :price
 
 
 def initialize(discount = 0)
   @total = 0
   @discount = discount
   @title = title 
+  @price = price 
   @item_list = []
   
 end
@@ -20,7 +21,7 @@ end
 
 def apply_discount
   if @discount > 0 
-     = self*80
+    savings = *80
     puts "After the discount, the total is $#{@total}."
   else
     puts "There is no discount to apply."
