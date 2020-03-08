@@ -18,6 +18,10 @@ def add_item(title, price, quantity = 1)
   @item_list << title
 end
 
+def apply_discount
+  
+end
+
 
 end
 
