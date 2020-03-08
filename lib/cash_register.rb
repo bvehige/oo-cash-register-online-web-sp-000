@@ -20,8 +20,8 @@ end
 
 def apply_discount
   if @discount > 0 
-    puts "After the discount "
-    @total = self*.80
+    puts "After the discount, the total comes to $#{@total*.80}."
+  
     
   
 end
